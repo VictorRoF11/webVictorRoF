@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -91,12 +91,67 @@ textarea {
 }
 
 
-
-
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+  box-sizing: border-box;
+}
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #f2f2f2;
+  font-family: 'Rubik', sans-serif;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+} 
+/**header**/
+/**
+font-family: 'ZCOOL QingKe HuangYou', cursive;
+font-family: 'Rubik', sans-serif;
+font-family: 'Oswald', sans-serif;
+**/
 
+
+div.hero {
+  background-image: url(../img/fondo-programacion5.jpg);
+  height: 50vh;
+  background-position: center;
+  background-repeat: repeat;
+  /**background-size: cover;**/
+}
+
+div.contenido-header {
+  padding-top: 30px;
+}
+@media only screen and (min-width: 768px) {
+  div.contenido-header {
+    padding-top: 15px;
+  }
+}
+nav.redes-sociales {
+  text-align: center;
+}
+nav.redes-sociales a {
+  color: #000;
+  font-size: 2em;
+  margin-right: 20px;
+}
+nav.redes-sociales a:last-child {
+  margin-right: 0px;
+}
+
+div.nombre-sitio {
+  text-align: left;
+  font-size: 2em;
+  margin-left: 40px;
+}
+
+h1.nombre-blog {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
 
 
 
@@ -192,7 +247,7 @@ textarea {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -210,7 +265,7 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -286,5 +341,3 @@ textarea {
         page-break-after: avoid;
     }
 }
-
-
