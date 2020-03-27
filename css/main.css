@@ -104,9 +104,30 @@ body {
   background-color: #f2f2f2;
   font-family: 'Rubik', sans-serif;
 }
+/**globales**/
 h2 {
   font-family: 'Oswald', sans-serif;
-} 
+}
+.contenedor {
+  width: 95%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 480px) {
+  .contenedor{
+    width: 98%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contenedor{
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contenedor{
+    width: 90%;
+    max-width: 1100px;
+  }
+}
 /**header**/
 /**
 font-family: 'ZCOOL QingKe HuangYou', cursive;
@@ -117,18 +138,18 @@ font-family: 'Oswald', sans-serif;
 
 div.hero {
   background-image: url(../img/fondo-programacion5.jpg);
-  height: 50vh;
+  height: 15vh;
   background-position: center;
   background-repeat: repeat;
   /**background-size: cover;**/
 }
 
 div.contenido-header {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 @media only screen and (min-width: 768px) {
   div.contenido-header {
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
 nav.redes-sociales {
@@ -136,7 +157,7 @@ nav.redes-sociales {
 }
 nav.redes-sociales a {
   color: #000;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-right: 20px;
 }
 nav.redes-sociales a:last-child {
@@ -145,7 +166,7 @@ nav.redes-sociales a:last-child {
 
 div.nombre-sitio {
   text-align: left;
-  font-size: 2em;
+  font-size: 0.8em;
   margin-left: 40px;
 }
 
@@ -153,14 +174,89 @@ h1.nombre-blog {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 
+div.barra {
+  background-color: #013ADF;
+  padding: 10px 0;
+}
+div.logo {
+  width: 80%;
+  float: left;
+}
+div.logo img{
+  width: 50%;
+}
+@media only screen and (min-width:768px) {
+  div.logo {
+    width: 33%;
+    float: left;
+  }
+}
+/**Nav principal**/
+nav.navegacion-principal {
+  display: none;
+}
+nav.navegacion-principal a {
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .6s ease;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+nav.navegacion-principal a:hover {
+  background-color: #FE2EF7;
+}
+nav.navegacion-principal a:last-child {
+  border: 2px solid #FE2EF7;
+  color: #FE2EF7;
+}
+nav.navegacion-principal a:last-child:hover {
+  color: #fff;
+}
+@media only screen and (min-width:768px) {
+  nav.navegacion-principal {
+    width: 66.6%;
+    float: right;
+    text-align: right;
+    display: block;
+  }
+  nav.navegacion-principal a {
+    margin-right: 15px;
+    padding: 10px 15px;
+    display: inline-block;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin-bottom:20px 10px 0 0;
+  }
 
-
-
-
-
-
-
-
+}
+/**Menu movil**/
+div.menu-movil {
+  width: 60px;
+  display: block;
+  float: right;
+  text-align: right;
+  margin-top: 12px;
+}
+div.menu-movil:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  div.menu-movil {
+    display: none;
+  }
+}
+div.menu-movil span {
+  height: 8px;
+  margin-bottom: 6px;
+  background-color: #fff;
+  display: block;
+}
 
 
 
